@@ -1,6 +1,6 @@
 import React from "react";
-import { AppBar, Container, Slide, Toolbar, useScrollTrigger } from "@mui/material";
-import { makeStyles } from "@mui/styles";
+import { AppBar, Container, Slide, Button, useScrollTrigger, Toolbar } from "@mui/material";
+import { makeStyles, styled } from "@mui/styles";
 import BrandLogo from "../../assets/BrandLogo.png";
 
 interface Props
@@ -20,10 +20,21 @@ function HideOnScroll( { children }: Props )
 }
 
 const useStyles = makeStyles({
-     logo: {
-         height: "20%",
-         width: "20%",
-     }
+    default: {
+        padding: "10px",
+    },
+    logo: {
+        height: "20%",
+        width: "20%",
+        float: "left",
+        textAlign: "left"
+    },
+    toolbar:{
+        float: "right"
+    },
+    button:{
+        margin: "20px"
+    }
 })
 
 const NavBar = ( ) =>
@@ -31,9 +42,35 @@ const NavBar = ( ) =>
     const classes = useStyles();
     return(
         <HideOnScroll>
-            <AppBar>
+            <AppBar className = { classes.default } color="transparent" elevation={0}>
                 <Container>
+
                     <img className = { classes.logo } src = { BrandLogo } />
+
+                    <Toolbar className = { classes.toolbar }>
+
+                        <Button variant="text" sx={{m: 1}}>
+                            Home
+                        </Button>
+
+                        <Button variant="text" sx={{m: 1}}>
+                            About
+                        </Button>
+
+                        <Button variant="text" sx={{m: 1}}>
+                            Projects
+                        </Button>
+
+                        <Button variant="text" sx={{m: 1}}>
+                            Contact
+                        </Button>
+
+                        <Button variant="text" sx={{m: 1}}>
+                            Resume
+                        </Button>
+
+                    </Toolbar>
+                    
                 </Container>
             </AppBar>
         </HideOnScroll>
