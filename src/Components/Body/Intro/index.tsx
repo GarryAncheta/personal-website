@@ -4,9 +4,10 @@ import React from "react";
 const useStyles = makeStyles({
     default: {
         position: "static",
-        height: "100vh"
+        flexGrow: "1"
     }
 })
+
 const Intro = () =>
 {
     const classes = useStyles();

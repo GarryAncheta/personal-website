@@ -26,10 +26,14 @@ const useStyles = makeStyles({
     },
     container:
     {
-        position: "relative"
+        width: "100vw"
     },
     logo: {
-        width: "12.5%",
+        display: "block",
+        width: "auto",
+        height: "auto",
+        maxHeight: "45%",
+        objectFit: "contain",
         position: "absolute",
         top: "50%",
         transform: "translateY(-50%)"
@@ -47,9 +51,8 @@ const NavBar = ( ) =>
     const classes = useStyles();
     return(
         <HideOnScroll>
-            <AppBar className = { classes.default } color="transparent" elevation={0}>
-                <Container>
-
+            <AppBar className = { classes.default } color="transparent" elevation={0} id="NavBar">
+                <Container className = {classes.container}>
                     <img className = { classes.logo } src = { BrandLogo } />
 
                     <Toolbar className = { classes.toolbar }>

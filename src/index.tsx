@@ -12,7 +12,7 @@ const theme = createTheme({
     mode: "dark",
     primary: 
     {
-      main: '#2D429B',
+      main: '#E7AD75',
     },
     secondary: 
     {
@@ -20,7 +20,7 @@ const theme = createTheme({
     },
     background: 
     {
-      default: '#463730'
+      default: '#171E2D'
     }
   },
   typography: 
