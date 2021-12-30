@@ -32,7 +32,7 @@ const useStyles = makeStyles({
         display: "block",
         width: "auto",
         height: "auto",
-        maxHeight: "45%",
+        maxHeight: "100%",
         objectFit: "contain",
         position: "absolute",
         top: "50%",
