@@ -1,5 +1,5 @@
-import { AppBar, Container, Toolbar } from '@mui/material';
 import React from 'react';
+import Intro from './Components/Body/Intro';
 import NavBar from './Components/NavBar';
 
 const Website = () =>
@@ -7,7 +7,9 @@ const Website = () =>
   return(
     <>
       <NavBar />
+      <Intro />
     </>
+
   )
 }
 

@@ -22,18 +22,23 @@ function HideOnScroll( { children }: Props )
 const useStyles = makeStyles({
     default: {
         padding: "10px",
+        position: "relative"
+    },
+    container:
+    {
+        position: "relative"
     },
     logo: {
-        height: "20%",
-        width: "20%",
-        float: "left",
-        textAlign: "left"
+        width: "12.5%",
+        position: "absolute",
+        top: "50%",
+        transform: "translateY(-50%)"
     },
     toolbar:{
         float: "right"
     },
     button:{
-        margin: "20px"
+        fontSize: "25px"
     }
 })
 
@@ -49,23 +54,19 @@ const NavBar = ( ) =>
 
                     <Toolbar className = { classes.toolbar }>
 
-                        <Button variant="text" sx={{m: 1}}>
+                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
                             Home
                         </Button>
 
-                        <Button variant="text" sx={{m: 1}}>
-                            About
-                        </Button>
-
-                        <Button variant="text" sx={{m: 1}}>
+                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
                             Projects
                         </Button>
 
-                        <Button variant="text" sx={{m: 1}}>
+                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
                             Contact
                         </Button>
 
-                        <Button variant="text" sx={{m: 1}}>
+                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
                             Resume
                         </Button>
 
