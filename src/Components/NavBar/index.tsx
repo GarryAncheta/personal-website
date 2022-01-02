@@ -3,26 +3,9 @@ import { AppBar, Container, Slide, Button, useScrollTrigger, Toolbar } from "@mu
 import { makeStyles, styled } from "@mui/styles";
 import BrandLogo from "../../assets/BrandLogo.png";
 
-interface Props
-{
-    children: React.ReactElement;
-}
-
-function HideOnScroll( { children }: Props )
-{   
-    const trigger = useScrollTrigger();
-
-    return(
-        <Slide appear = { false } direction = { "down" } in = { !trigger }>
-            { children }
-        </Slide>
-    )
-}
-
 const useStyles = makeStyles({
     default: {
-        padding: "10px",
-        position: "relative"
+        padding: "10px"
     },
     container:
     {
@@ -49,35 +32,43 @@ const useStyles = makeStyles({
 const NavBar = ( ) =>
 {
     const classes = useStyles();
+    const trigger = useScrollTrigger();
+
     return(
-        <HideOnScroll>
-            <AppBar className = { classes.default } color="transparent" elevation={0} id="NavBar">
-                <Container className = {classes.container}>
-                    <img className = { classes.logo } src = { BrandLogo } />
 
-                    <Toolbar className = { classes.toolbar }>
+            <Slide appear = { false } direction = "down" in = { !trigger }>
 
-                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
-                            Home
-                        </Button>
-
-                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
-                            Projects
-                        </Button>
-
-                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
-                            Contact
-                        </Button>
-
-                        <Button variant="text" sx={{m: 1}} className = { classes.button }>
-                            Resume
-                        </Button>
-
-                    </Toolbar>
+                <AppBar className = { classes.default } color="transparent" elevation={0} id="NavBar">
                     
-                </Container>
-            </AppBar>
-        </HideOnScroll>
+                    <Container className = {classes.container}>
+
+                        <img className = { classes.logo } src = { BrandLogo } />
+
+                        <Toolbar className = { classes.toolbar }>
+
+                            <Button variant="text" sx={{m: 1}} className = { classes.button }>
+                                Home
+                            </Button>
+
+                            <Button variant="text" sx={{m: 1}} className = { classes.button }>
+                                Projects
+                            </Button>
+
+                            <Button variant="text" sx={{m: 1}} className = { classes.button }>
+                                Contact
+                            </Button>
+
+                            <Button variant="text" sx={{m: 1}} className = { classes.button }>
+                                Resume
+                            </Button>
+
+                        </Toolbar>
+                        
+                    </Container>
+
+                </AppBar>
+
+            </Slide>
     )
 }
 

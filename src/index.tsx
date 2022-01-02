@@ -37,7 +37,7 @@ const theme = createTheme({
         {
           height: "100%", 
           width: "100%",
-          position: "static"
+          position: "static",
         }
       }
     }
