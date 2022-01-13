@@ -2,9 +2,8 @@ import { createTheme, ScopedCssBaseline, ThemeProvider } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Website from './Website';
-import './Website.css';
 
-const defaultFont = "'Yanone Kaffeesatz', sans-serif";
+const defaultFont = "'Julius Sans One', sans-serif";
 
 const theme = createTheme({
   palette: 
@@ -12,15 +11,15 @@ const theme = createTheme({
     mode: "dark",
     primary: 
     {
-      main: '#E7AD75',
+      main: '#00a4e6',
     },
     secondary: 
     {
-      main: '#FDE74C',
+      main: '#00212e',
     },
     background: 
     {
-      default: '#171E2D'
+      default: '#1B3042'
     }
   },
   typography: 

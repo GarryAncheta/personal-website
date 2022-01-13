@@ -1,0 +1,12 @@
+.default
+{
+    height: 100vh;
+    display: block;
+    padding-top: 175px;
+}
+
+.headshot
+{
+    height: 20vh;
+    border-radius: 50%;
+}

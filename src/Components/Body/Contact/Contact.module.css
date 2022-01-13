@@ -1,0 +1,30 @@
+.default
+{
+    height: 90vh;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.break
+{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.paper 
+{
+    min-height: 500px;
+    width: 75vw;
+    background-color: #001017;
+}
+
+.buttons
+{
+    left: 50%;
+}

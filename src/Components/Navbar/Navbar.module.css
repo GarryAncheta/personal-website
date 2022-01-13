@@ -1,0 +1,18 @@
+.default
+{
+    display: relative;
+    
+}
+
+.logo
+{
+    color: #00a4e6;
+}
+
+.container
+{
+    position: absolute;
+    left: auto;
+    right: 0;
+    padding-right: 10px;
+}
