@@ -18,7 +18,7 @@ const About = () =>
                     <Grid item xs = { 8 }>
                         Hello! I am Garry Ancheta and I love the expansiveness of programming! 
                         Ever since my father gave me my first laptop, I had always been interested in how a computer works.
-                        Although I my interests were with computers, I came into college not wanting to study computers, but rather medicine.
+                        Although my interests were with computers, I came into college not wanting to study computers, but rather medicine.
                         Two years in, I came to the realization that I was not invested in my major as I believed. As I searched for alternatives, I decided to
                         take a leap of faith. Persevering through my fear of math, I was able to find a passion for Computer Science!
                         <br/> <br/>
