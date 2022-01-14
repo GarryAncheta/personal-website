@@ -72,13 +72,9 @@ const Website = () =>
 
         <Grid item xs = { 10 } className = { styles.main_grid }>
           <Intro />
-          <div className = { styles.main_grid_break } />
           <About />
-          <div className = { styles.main_grid_break } />
           <Experience />
-          <div className = { styles.main_grid_break } />
           <Showcase /> 
-          <div className = { styles.main_grid_break } />
           <Contact />
         </Grid>
 

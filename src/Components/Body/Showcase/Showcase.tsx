@@ -2,11 +2,10 @@ import React from "react";
 import styles from "./Showcase.module.css";
 
 import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined';
-import { CardHeader, Grid, IconButton } from "@mui/material";
+import { CardHeader, Grid } from "@mui/material";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 const Showcase = () =>
@@ -19,10 +18,10 @@ const Showcase = () =>
 
                 <Grid container>
 
-                    <Grid container xs = { 12 } spacing = { 8 } alignItems = "stretch">
+                    <Grid container xs = { 12 } spacing = { 8 } alignItems = "stretch" direction={{ lg: "row", md: "row", sm: "column", xs: "column"}}>
 
                         <Grid item xs = { 4 } >
-                            <Card sx={{ height: 300, bgcolor: "#001017"  }}>
+                            <Card sx={{ minHeight: 300, bgcolor: "#001017"  }}>
                                 <CardHeader action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} title = "NOBL Web Application & API"/>
                                 <CardContent>
                                     <Typography variant="body2">
@@ -41,7 +40,7 @@ const Showcase = () =>
                         </Grid>
 
                         <Grid item xs = { 4 }>
-                            <Card sx={{ height: 300, bgcolor: "#001017"  }}>
+                            <Card sx={{ minHeight: 300, bgcolor: "#001017"  }}>
                                 <CardHeader action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} title = "ChitChat - Chatting App"/>
                                 <CardContent>
 
@@ -61,7 +60,7 @@ const Showcase = () =>
                         </Grid>
 
                         <Grid item xs = { 4 }>
-                            <Card sx={{ height: 300, bgcolor: "#001017"  }} >
+                            <Card sx={{ minHeight: 300, bgcolor: "#001017"  }} >
                                 <CardHeader action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} title = "COVID Statistics Website"/>
                                 <CardContent>
                                     <Typography variant="body2">

@@ -1,6 +1,6 @@
 .default
 {
-    height: 100vh;
+    min-height: 100vh;
     display: block;
     padding-top: 175px;
 }
