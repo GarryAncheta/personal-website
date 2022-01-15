@@ -75,7 +75,10 @@ const Experience = (  ) =>
 
                     </Tabs>
 
-                    <TabPanel value={value} index={0}>
+                    <TabPanel 
+                        value={value} 
+                        index={0}
+                    >
                         
                         <h3> Software Engineer Intern </h3>
                         <h5> BuzzVoice Inc. </h5>

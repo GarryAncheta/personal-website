@@ -12,36 +12,71 @@ const Showcase = () =>
 {
 
     return(
-        <div className = { styles.default } id = "showcase">
+        <div 
+            className = { styles.default } 
+            id = "showcase"
+        >
+
             <div>
+
                 <h2> Project Showcase </h2>
 
                 <Grid container>
 
-                    <Grid container xs = { 12 } spacing = { 8 } alignItems = "stretch" direction={{ lg: "row", md: "row", sm: "column", xs: "column"}}>
+                    <Grid container 
+                        xs = { 12 } 
+                        spacing = { 8 } 
+                        alignItems = "stretch" 
+                        direction={{ lg: "row", md: "row", sm: "column", xs: "column"}}
+                    >
 
-                        <Grid item xs = { 4 } >
-                            <Card sx={{ minHeight: 300, bgcolor: "#001017"  }}>
-                                <CardHeader action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} title = "NOBL Web Application & API"/>
+                        <Grid item 
+                            xs = { 4 } 
+                        >
+
+                            <Card 
+                                sx={{ minHeight: 300, bgcolor: "#001017"  }}
+                            >
+
+                                <CardHeader 
+                                    action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} 
+                                    title = "NOBL Web Application & API"
+                                />
+
                                 <CardContent>
-                                    <Typography variant="body2">
+
+                                    <Typography 
+                                        variant="body2"
+                                    >
                                         A Full Stack Capstone project where I was the Team Lead for the group. This web application integrated Auth0 and ECharts
                                         and used a SQL backend with a custom API to send data to and from the database.
                                     </Typography>
                                     <br />
                                     
                                 </CardContent>
+
                                 <CardActions>
+
                                     <Typography variant="caption">
                                         React, Gatsby, Auth0, NodeJS, SQL
                                     </Typography>
+
                                 </CardActions>
+
                             </Card>
+
                         </Grid>
 
                         <Grid item xs = { 4 }>
-                            <Card sx={{ minHeight: 300, bgcolor: "#001017"  }}>
-                                <CardHeader action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} title = "ChitChat - Chatting App"/>
+                            <Card 
+                                sx={{ minHeight: 300, bgcolor: "#001017"  }}
+                            >
+
+                                <CardHeader 
+                                    action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} t
+                                    itle = "ChitChat - Chatting App"
+                                />
+
                                 <CardContent>
 
                                     <Typography variant="body2">
@@ -51,30 +86,45 @@ const Showcase = () =>
                                     <br />
                                     
                                 </CardContent>
+
                                 <CardActions>
+
                                     <Typography variant="caption">
                                         React, Stream.io, NodeJS
                                     </Typography>
+
                                 </CardActions>
+
                             </Card>
                         </Grid>
 
                         <Grid item xs = { 4 }>
-                            <Card sx={{ minHeight: 300, bgcolor: "#001017"  }} >
-                                <CardHeader action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} title = "COVID Statistics Website"/>
+                            <Card 
+                                sx={{ minHeight: 300, bgcolor: "#001017"  }} 
+                            >
+                               
+                                <CardHeader 
+                                    action = { <AssignmentTurnedInOutlinedIcon sx = {{ color: "#00a4e6"}}/>} 
+                                    title = "COVID Statistics Website"
+                                />
+
                                 <CardContent>
-                                    <Typography variant="body2">
+                                    <Typography 
+                                        variant="body2"
+                                    >
                                         Used Disease.sh to pull COVID statistics for display in a front-end interface created with Material UI and React. 
                                         Also implemented data visualization with Recharts to show different aspects of the COVID pandemic.
                                     </Typography>
                                     <br />
                                     
                                 </CardContent>
+
                                 <CardActions>
                                     <Typography variant="caption">
                                         React, Material UI, Disease.sh, Recharts
                                     </Typography>
                                 </CardActions>
+                                
                             </Card>
                         </Grid>
 

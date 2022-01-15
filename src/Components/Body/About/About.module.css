@@ -10,3 +10,10 @@
     height: 20vh;
     border-radius: 50%;
 }
+
+.picture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

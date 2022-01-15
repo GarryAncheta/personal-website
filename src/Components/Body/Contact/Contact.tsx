@@ -5,12 +5,18 @@ import styles from "./Contact.module.css";
 const Contact = () =>
 {
     return(
-        <div id = "contact" className = { styles.default }>
+        <div 
+            id = "contact" 
+            className = { styles.default }
+        >
             <div>
+
                 <h2>Contact</h2>
+
                 <Typography variant = "h2">
-                    Wanna chat?
+                    Questions?
                 </Typography>
+
                 <Typography variant="h6">
                     If you believe that I am perfect for an opportunity or
                     if you just want to stop by and say hi, do not hestitate to do so!
@@ -18,11 +24,16 @@ const Contact = () =>
                     My motto is, "People first, tech always." Any questions, comments, or concerns that you might have...
                     To me, it doesn't matter. Contact me if you deem it necessary! 
                 </Typography>
+
                 <br />
 
-                <div className = { styles.container }>
+                <div 
+                    className = { styles.container }
+                >
 
-                    <div className = { styles.buttons }>
+                    <div 
+                        className = { styles.buttons }
+                    >
                         <br />
                         <Button 
                             variant = "outlined" 
@@ -31,7 +42,7 @@ const Contact = () =>
                             target = "_blank"
                             href = "mailto:garry.b.ancheta@gmail.com"
                         > 
-                            Hello Hello 
+                            Hello!
                         </Button>
                     </div>
                 </div>

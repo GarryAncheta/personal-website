@@ -7,14 +7,17 @@ import Garry from "../../../assets/garry.png";
 const About = () => 
 {
     return(
-        <div  className = { styles.default } id = "about">
+        <section  className = { styles.default } id = "about">
         
             <div>
 
+                {/* Section Heading */}
                 <h2> About Me! </h2>
 
+                {/* Grid to separate text and picture */}
                 <Grid container spacing = { 3 }>
 
+                    {/* Enter information about yourself */}
                     <Grid item xs = { 8 }>
                         Hello! I am Garry Ancheta and I love the expansiveness of programming! 
                         Ever since my father gave me my first laptop, I had always been interested in how a computer works.
@@ -27,14 +30,15 @@ const About = () =>
                         With the internship, I was able to get a taste of full stack web development using Angular and TypeScript!
                     </Grid>
 
-                    <Grid item xs = { 4 }>
+                    {/* Image, centered within the grid */}
+                    <Grid item xs = { 4 } className = { styles.picture }>
                         <img src = { Garry } className = { styles.headshot }/>
                     </Grid>
 
                 </Grid>
             </div>
 
-        </div>
+        </section>
     )
 }
 
