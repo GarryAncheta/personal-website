@@ -1,4 +1,4 @@
-import { AppBar, Button, Slide, Toolbar, Typography, useScrollTrigger } from "@mui/material";
+import { AppBar, Button, Slide, Toolbar, useScrollTrigger } from "@mui/material";
 import React from "react";
 import styles from "./Navbar.module.css";
 import Logo from "../../assets/BrandLogo.png";
@@ -17,8 +17,8 @@ const Navbar = () =>
 
                     <Toolbar>
                         
-                        <a href = "#"> 
-                            <img src = { Logo } width = "7.5%" />
+                        <a href = "/"> 
+                            <img src = { Logo } width = "7.5%" alt = "Website Logo"/>
                         </a>
                         
                         

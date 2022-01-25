@@ -1,5 +1,4 @@
 import { Grid, IconButton, Link } from '@mui/material';
-import { makeStyles } from '@mui/styles';
 import React from 'react';
 import { Navbar } from './Components';
 import { About, Contact, Experience, Intro, Showcase } from './Components/Body';

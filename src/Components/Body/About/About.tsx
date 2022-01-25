@@ -32,7 +32,7 @@ const About = () =>
 
                     {/* Image, centered within the grid */}
                     <Grid item xs = { 4 } className = { styles.picture }>
-                        <img src = { Garry } className = { styles.headshot }/>
+                        <img src = { Garry } alt = "Me!" className = { styles.headshot }/>
                     </Grid>
 
                 </Grid>
