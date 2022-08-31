@@ -9,8 +9,8 @@ const Intro = () =>
         <div className = { styles.display } id = "#">
             <h3 className = { styles.greeting }> Greetings! My name is</h3>
             <h1 className = { styles.name }> Garry Ancheta </h1>
-            <h3 className = { styles.statement }> I like exploring web development! </h3>
-            <p className = { styles.description }> I am an aspiring Software Engineer who will be graduating <br></br> in May 2022 with professional experience in JavaScript and Angular.</p>
+            <h3 className = { styles.statement }> I love software development! </h3>
+            <p className = { styles.description }> I am a software engineer with experience in backend engineering with a passion for full-stack engineer as well!.</p>
 
             <div className = { styles.learn }>
                 <Button 
